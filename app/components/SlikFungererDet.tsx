@@ -17,7 +17,7 @@ const items = [
     keyword: "Last ned Membro-appen",
     description: (
       <>
-        Appen er nøkkelen din til senteret, hele døgnet, alle dager.
+        Din digitale nøkkel og medlemsportal.
         <span className="flex flex-wrap items-center gap-3 mt-3">
           <a
             href={LINKS.googlePlay}
