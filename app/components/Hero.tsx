@@ -19,7 +19,7 @@ export default function Hero() {
               </h1>
               <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
                 Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-                bindingstid og én måneds oppsigelse.
+                bindingstid og stor utstyrspark.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
@@ -53,7 +53,7 @@ export default function Hero() {
             </h1>
             <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
               Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-              bindingstid og én måneds oppsigelse.
+              bindingstid og stor utstyrspark.
             </p>
             <div className="flex flex-wrap gap-3">
               <a

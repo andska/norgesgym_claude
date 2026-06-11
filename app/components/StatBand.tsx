@@ -5,9 +5,9 @@ type Stat =
 
 const stats: Stat[] = [
   { kind: "number", number: "24/7", label: "Døgnåpent" },
-  { kind: "number", number: "429,-.", label: "Per måned, alt inkludert" },
+  { kind: "number", number: "429,-", label: "per mnd – uten binding" },
   { kind: "text", label: "Gratis parkering" },
-  { kind: "hours", heading: "Bemannet resepsjon man–tor", time: "16:00–18:30" },
+  { kind: "hours", heading: "Resepsjon bemannet mandag–torsdag", time: "16:00–18:30" },
 ];
 
 export default function StatBand() {
@@ -23,7 +23,7 @@ export default function StatBand() {
               {stat.kind === "number" && (
                 <>
                   <div
-                    className="font-display font-medium text-ink leading-none"
+                    className="font-display font-medium text-ink leading-tight"
                     style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontStretch: "125%" }}
                   >
                     {stat.number}
@@ -41,7 +41,7 @@ export default function StatBand() {
               )}
               {stat.kind === "hours" && (
                 <>
-                  <p className="text-[12px] tracking-[0.08em] text-gravel mb-2">
+                  <p className="text-[11px] tracking-[0.06em] text-gravel mb-2 leading-snug">
                     {stat.heading}
                   </p>
                   <div

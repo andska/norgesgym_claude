@@ -1,3 +1,4 @@
+import Image from "next/image";
 import IndexList from "./IndexList";
 import { LINKS } from "@/app/config";
 
@@ -22,10 +23,11 @@ const items = [
             rel="noopener noreferrer"
             aria-label="Hent Membro fra Google Play"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+              <Image
               src="/badge-google-play.png"
               alt="Hent fra Google Play"
+              width={646}
+              height={250}
               className="h-[47px] w-auto"
             />
           </a>
@@ -35,10 +37,11 @@ const items = [
             rel="noopener noreferrer"
             aria-label="Last ned Membro fra App Store"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+              <Image
               src="/badge-app-store.svg"
               alt="Last ned fra App Store"
+              width={120}
+              height={40}
               className="h-[40px] w-auto"
             />
           </a>
@@ -64,7 +67,7 @@ export default function SlikFungererDet() {
           className="font-display font-medium text-ink mb-10"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
         >
-          Kom i gang på tre steg
+          Kom i gang
         </h2>
 
         <IndexList items={items} />

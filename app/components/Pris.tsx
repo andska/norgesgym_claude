@@ -6,7 +6,7 @@ const specs = [
   { label: "Drop-in", value: "120 kr per besøk" },
   { label: "Årsavgift", value: "Ingen" },
   { label: "Bindingstid", value: "Ingen" },
-  { label: "Oppsigelse", value: "Én måned, via e-post" },
+  { label: "Oppsigelse", value: "1 måned fra første dag i påfølgende måned" },
   { label: "Betaling", value: "Avtalegiro" },
   { label: "Tilgang", value: "Hele døgnet med Membro-appen" },
 ] as const;

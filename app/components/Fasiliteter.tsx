@@ -1,5 +1,11 @@
 import PlaceholderImage from "./PlaceholderImage";
 
+const facilities = [
+  { alt: "Frivekter: manualer, stenger og racks", caption: "Frivekter" },
+  { alt: "Styrkeapparater for hele kroppen", caption: "Styrkeapparater" },
+  { alt: "Kardioutstyr: tredemøller og sykler", caption: "Kardio" },
+];
+
 export default function Fasiliteter() {
   return (
     <section id="fasiliteter" className="bg-smoke py-16 lg:py-24">
@@ -9,34 +15,39 @@ export default function Fasiliteter() {
           className="font-display font-medium text-ink mb-4"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
         >
-          Alt du trenger for egentrening
+          Alt du trenger
         </h2>
         <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-2xl">
-          Norgesgym er rendyrket for egentrening. Du trener når du vil, i ditt eget tempo,
-          uten timeplaner og bookinger.
+          Norgesgym er rendyrket for egentrening.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {/* TODO photo: overview of the free weights area, daylight, tidy. */}
-          <figure className="flex flex-col gap-3">
-            <PlaceholderImage aspect="3:2" alt="Frivekter: manualer, stenger og racks" />
-            <figcaption className="text-[13px] text-stone">Frivekter</figcaption>
-          </figure>
-          {/* TODO photo: strength machines, clean and accessible. */}
-          <figure className="flex flex-col gap-3">
-            <PlaceholderImage aspect="3:2" alt="Styrkeapparater for hele kroppen" />
-            <figcaption className="text-[13px] text-stone">Styrkeapparater</figcaption>
-          </figure>
-          {/* TODO photo: cardio section, treadmills and bikes. */}
-          <figure className="flex flex-col gap-3">
-            <PlaceholderImage aspect="3:2" alt="Kardioutstyr: tredemøller og sykler" />
-            <figcaption className="text-[13px] text-stone">Kardio</figcaption>
-          </figure>
+        {/* Mobile: horizontal swipe carousel */}
+        <div
+          className="sm:hidden -mx-6 overflow-x-auto snap-x snap-mandatory pb-3 [&::-webkit-scrollbar]:hidden"
+          style={{ scrollbarWidth: "none" }}
+        >
+          <div className="flex gap-4 pl-6 pr-6">
+            {facilities.map((f) => (
+              <figure
+                key={f.caption}
+                className="flex-shrink-0 w-[82%] snap-start flex flex-col gap-3"
+              >
+                <PlaceholderImage aspect="3:2" alt={f.alt} />
+                <figcaption className="text-[13px] text-stone">{f.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
 
-        <p className="text-[14px] text-stone leading-relaxed mt-10 max-w-2xl">
-          I tillegg har vi Stairmaster Stepmill 5, TreadClimber og TRX-soner for slyngetrening.
-        </p>
+        {/* Desktop: 3-col grid */}
+        <div className="hidden sm:grid sm:grid-cols-3 gap-4">
+          {facilities.map((f) => (
+            <figure key={f.caption} className="flex flex-col gap-3">
+              <PlaceholderImage aspect="3:2" alt={f.alt} />
+              <figcaption className="text-[13px] text-stone">{f.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
       </div>
     </section>
   );
