@@ -1,40 +1,70 @@
 "use client";
 import { useState } from "react";
+import { LINKS } from "@/app/config";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: "Hvordan melder jeg meg inn?",
-    a: "Ring oss på 947 89 080 eller send en e-post til post@norgesgym.no, så ordner vi alt. Innmelding koster 199 kr, deretter betaler du 429 kr i måneden med avtalegiro.",
+    a: (
+      <>
+        Meld deg inn på{" "}
+        <a
+          href={LINKS.innmelding}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+        >
+          norgesgymmoss.ibooking.no
+        </a>
+        . Det tar et par minutter. Innmelding koster 199 kr, deretter betaler du
+        429 kr i måneden via avtalegiro.
+      </>
+    ),
   },
   {
-    q: "Er det trygt å trene alene?",
-    a: "Ja. Senteret er videoovervåket hele døgnet, og du når oss alltid på telefon. Mange av medlemmene våre trener alene, på alle tider av døgnet.",
+    q: "Kan jeg trene alene, midt på natten?",
+    a: "Ja. Senteret er videoovervåket og selvbetjent hele døgnet. Du kan alltid ringe 947 89 080 hvis du trenger hjelp.",
   },
   {
     q: "Jeg er helt ny. Passer Norgesgym for meg?",
-    a: "Ja. Du trenger ingen forkunnskaper for å trene hos oss. På dagtid er det ofte rolig på senteret, og du kan alltid ringe oss hvis du lurer på noe.",
+    a: "Ja. Du trenger ingen forkunnskaper. Utstyret er enkelt å bruke, og på dagtid er det ofte rolig på senteret. Ring oss på 947 89 080 hvis du vil vite mer.",
   },
   {
     q: "Har dere gruppetimer eller personlig trener?",
     a: "Nei. Norgesgym er rendyrket for egentrening. Du trener når du vil og i ditt eget tempo, og det er en av grunnene til at vi kan holde prisen nede.",
   },
   {
+    q: "Hva er drop-in?",
+    a: "Du kan trene én gang uten medlemskap for 120 kr. Full tilgang til alt utstyr, ingen registrering nødvendig.",
+  },
+  {
     q: "Hvordan kommer jeg inn?",
-    a: "Med Membro-appen på mobilen. Den fungerer som nøkkelen din, hele døgnet, alle dager.",
+    a: "Med Membro-appen på mobilen. Appen er nøkkelen din, hele døgnet, alle dager.",
+  },
+  {
+    q: "Er det parkering?",
+    a: (
+      <>
+        Ja, gratis parkering rett utenfor. Se{" "}
+        <a
+          href="#finn-oss"
+          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+        >
+          kart og veibeskrivelse
+        </a>{" "}
+        for mer informasjon.
+      </>
+    ),
   },
   {
     q: "Hvordan sier jeg opp?",
     a: "Send en e-post til post@norgesgym.no. Oppsigelsestiden er én måned, og du trenger ikke oppgi noen grunn.",
   },
   {
-    q: "Er det parkering?",
-    a: "Ja, 108 gratis plasser rett utenfor. Maks høyde er 2,20 meter.",
+    q: "Når er resepsjonen bemannet?",
+    a: "Mandag til torsdag 16:00–18:30. Resten av døgnet er senteret selvbetjent, og du når oss på telefon 947 89 080.",
   },
-  {
-    q: "Når er det folk på senteret?",
-    a: "Resepsjonen er bemannet mandag til torsdag 16:00 til 18:30. Resten av døgnet er senteret selvbetjent, og du når oss på telefon 947 89 080.",
-  },
-] as const;
+];
 
 export default function Sporsmal() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

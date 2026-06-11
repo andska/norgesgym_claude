@@ -1,7 +1,8 @@
 interface IndexItem {
   number: string;
   keyword: string;
-  description: string;
+  keywordHref?: string;
+  description: React.ReactNode;
 }
 
 interface Props {
@@ -17,7 +18,18 @@ export default function IndexList({ items }: Props) {
           <div className="hidden sm:grid sm:grid-cols-[48px_220px_1fr] sm:gap-4">
             <span className="text-[13px] text-gravel">{item.number}</span>
             <span className="font-display font-medium text-[18px] leading-snug text-ink">
-              {item.keyword}
+              {item.keywordHref ? (
+                <a
+                  href={item.keywordHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+                >
+                  {item.keyword}
+                </a>
+              ) : (
+                item.keyword
+              )}
             </span>
             <span className="text-[14px] text-stone leading-[1.55]">
               {item.description}
@@ -25,13 +37,24 @@ export default function IndexList({ items }: Props) {
           </div>
           {/* Mobile */}
           <div className="sm:hidden">
-            <div className="flex items-baseline gap-3 mb-1.5">
-              <span className="text-[13px] text-gravel flex-shrink-0">{item.number}</span>
+            <div className="flex items-baseline gap-3 mb-2">
+              <span className="text-[13px] text-gravel flex-shrink-0 w-7">{item.number}</span>
               <span className="font-display font-medium text-[18px] leading-snug text-ink">
-                {item.keyword}
+                {item.keywordHref ? (
+                  <a
+                    href={item.keywordHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+                  >
+                    {item.keyword}
+                  </a>
+                ) : (
+                  item.keyword
+                )}
               </span>
             </div>
-            <p className="text-[14px] text-stone leading-[1.55]">{item.description}</p>
+            <p className="pl-7 text-[14px] text-stone leading-[1.55]">{item.description}</p>
           </div>
         </div>
       ))}

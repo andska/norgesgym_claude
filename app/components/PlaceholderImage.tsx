@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type Aspect = "3:2" | "1:1" | "16:9";
+type Aspect = "3:2" | "1:1" | "16:9" | "4:5";
 
 interface Props {
   src?: string;
@@ -13,6 +13,7 @@ const aspectClasses: Record<Aspect, string> = {
   "3:2": "aspect-[3/2]",
   "1:1": "aspect-square",
   "16:9": "aspect-video",
+  "4:5": "aspect-[4/5]",
 };
 
 export default function PlaceholderImage({ src, alt, aspect, className = "" }: Props) {

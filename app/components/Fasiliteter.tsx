@@ -1,38 +1,4 @@
-import IndexList from "./IndexList";
 import PlaceholderImage from "./PlaceholderImage";
-
-const items = [
-  {
-    number: "01",
-    keyword: "Frivekter",
-    description: "Stort utvalg av manualer, stenger, racks og benker.",
-  },
-  {
-    number: "02",
-    keyword: "Styrkeapparater",
-    description: "Apparater for hele kroppen, enkle å bruke også for deg som er ny.",
-  },
-  {
-    number: "03",
-    keyword: "Kardio",
-    description: "Komplett avdeling med tredemøller, romaskiner og sykler.",
-  },
-  {
-    number: "04",
-    keyword: "Stairmaster Stepmill 5",
-    description: "Ekte trappetrinn, effektiv kondisjonstrening.",
-  },
-  {
-    number: "05",
-    keyword: "TreadClimber",
-    description: "Skånsom og effektiv gange i motbakke.",
-  },
-  {
-    number: "06",
-    keyword: "TRX",
-    description: "Slyngetrening med egen kroppsvekt.",
-  },
-] as const;
 
 export default function Fasiliteter() {
   return (
@@ -50,20 +16,27 @@ export default function Fasiliteter() {
           uten timeplaner og bookinger.
         </p>
 
-        <IndexList items={items} />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {/* TODO photo: overview of the free weights area, daylight, tidy. */}
-          <PlaceholderImage
-            aspect="3:2"
-            alt="Oversikt over frivektssonen"
-          />
-          {/* TODO photo: close-up detail, dumbbells or plates. Tight crops flatter the space, wide shots do not. Prefer details. */}
-          <PlaceholderImage
-            aspect="1:1"
-            alt="Detalj: manualer eller vektskiver"
-          />
+          <figure className="flex flex-col gap-3">
+            <PlaceholderImage aspect="3:2" alt="Frivekter: manualer, stenger og racks" />
+            <figcaption className="text-[13px] text-stone">Frivekter</figcaption>
+          </figure>
+          {/* TODO photo: strength machines, clean and accessible. */}
+          <figure className="flex flex-col gap-3">
+            <PlaceholderImage aspect="3:2" alt="Styrkeapparater for hele kroppen" />
+            <figcaption className="text-[13px] text-stone">Styrkeapparater</figcaption>
+          </figure>
+          {/* TODO photo: cardio section, treadmills and bikes. */}
+          <figure className="flex flex-col gap-3">
+            <PlaceholderImage aspect="3:2" alt="Kardioutstyr: tredemøller og sykler" />
+            <figcaption className="text-[13px] text-stone">Kardio</figcaption>
+          </figure>
         </div>
+
+        <p className="text-[14px] text-stone leading-relaxed mt-10 max-w-2xl">
+          I tillegg har vi Stairmaster Stepmill 5, TreadClimber og TRX-soner for slyngetrening.
+        </p>
       </div>
     </section>
   );

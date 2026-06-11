@@ -1,10 +1,11 @@
 import Header from "@/app/components/Header";
 import Hero from "@/app/components/Hero";
 import StatBand from "@/app/components/StatBand";
-import DerforNorgesgym from "@/app/components/DerforNorgesgym";
+import SlikFungererDet from "@/app/components/SlikFungererDet";
 import Fasiliteter from "@/app/components/Fasiliteter";
 import Pris from "@/app/components/Pris";
 import Sporsmal from "@/app/components/Sporsmal";
+import FinnOss from "@/app/components/FinnOss";
 import Kontakt from "@/app/components/Kontakt";
 
 export default function Page() {
@@ -20,10 +21,11 @@ export default function Page() {
       <main id="main">
         <Hero />
         <StatBand />
-        <DerforNorgesgym />
+        <SlikFungererDet />
         <Fasiliteter />
         <Pris />
         <Sporsmal />
+        <FinnOss />
       </main>
       <Kontakt />
     </>

@@ -4,7 +4,20 @@
       "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --use-npm --yes --turbopack)",
       "Bash(ls lib/)",
       "Bash(ls CLAUDE.md)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\andre\\\\projects\\\\norgesgym_claude\\\\app\\\\components\\\\DerforNorgesgym.tsx\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\andre\\\\projects\\\\norgesgym_claude\\\\app\\\\components\\\\InnmeldingForm.tsx\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Users\\\\andre\\\\projects\\\\norgesgym_claude\\\\lib\\\\config.ts\" -Force)",
+      "WebFetch(domain:play.google.com)",
+      "WebFetch(domain:apps.apple.com)",
+      "WebFetch(domain:membro.no)",
+      "WebFetch(domain:www.ibooking.no)",
+      "WebFetch(domain:itunes.apple.com)",
+      "WebFetch(domain:is1-ssl.mzstatic.com)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://play.google.com/intl/nb_no/badges/images/generic/no_badge_web_generic.png\" -OutFile \"C:\\\\Users\\\\andre\\\\projects\\\\norgesgym_claude\\\\public\\\\badge-google-play.png\" -UseBasicParsing; Write-Output \"Google Play badge downloaded\")",
+      "PowerShell(Invoke-WebRequest -Uri \"https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg\" -OutFile \"C:\\\\Users\\\\andre\\\\projects\\\\norgesgym_claude\\\\public\\\\badge-app-store.svg\" -UseBasicParsing; Write-Output \"App Store badge downloaded\")",
+      "Bash(Remove-Item *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
