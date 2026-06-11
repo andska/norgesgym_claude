@@ -126,7 +126,7 @@ const faqLd = {
       name: "Har dere gruppetimer eller personlig trener?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nei. Norgesgym er rendyrket for egentrening. Du trener når du vil og i ditt eget tempo.",
+        text: "Nei. Norgesgym er rendyrket for egentrening. Du trener når du vil og i ditt eget tempo, og det er en av grunnene til at vi kan holde prisen nede.",
       },
     },
     {
@@ -150,7 +150,15 @@ const faqLd = {
       name: "Er det parkering?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja, gratis parkering rett utenfor senteret.",
+        text: "Ja, gratis parkering rett utenfor. Se kart og veibeskrivelse for mer informasjon.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvor ligger Norgesgym?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Solgaard Skog 15 i Moss, like ved E6, med gratis parkering rett utenfor inngangen. Se kart og veibeskrivelse under Finn oss.",
       },
     },
     {
@@ -158,7 +166,7 @@ const faqLd = {
       name: "Hvordan sier jeg opp?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Send en e-post til post@norgesgym.no. Oppsigelsestiden er én måned, og du trenger ikke oppgi noen grunn.",
+        text: "Send en e-post til post@norgesgym.no. Oppsigelsestiden er én måned, regnet fra første dag i påfølgende måned.",
       },
     },
     {

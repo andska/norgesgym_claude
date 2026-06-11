@@ -6,9 +6,10 @@ export const LINKS = {
   avtalegiro: "https://norgesgymmoss.ibooking.no/atg",
   googleMaps:
     "https://www.google.com/maps/search/Norgesgym+Solgaard+Skog+15+Moss",
-  membroAndroid:
+  // TODO: confirm exact Membro store URLs before launch
+  appStore: "https://apps.apple.com/us/app/membro/id1542602956",
+  googlePlay:
     "https://play.google.com/store/apps/details?id=no.ibooking.membroapp",
-  membroIos: "https://apps.apple.com/us/app/membro/id1542602956",
 };
 
 export const FLAGS = {

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import googlePlayBadge from "@/public/badges/google-play.png";
+import appStoreBadge from "@/public/badges/app-store.svg";
 import IndexList from "./IndexList";
 import { LINKS } from "@/app/config";
 
@@ -16,32 +18,28 @@ const items = [
     description: (
       <>
         Appen er nøkkelen din til senteret, hele døgnet, alle dager.
-        <span className="flex flex-wrap gap-3 mt-3">
+        <span className="flex flex-wrap items-center gap-3 mt-3">
           <a
-            href={LINKS.membroAndroid}
+            href={LINKS.googlePlay}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Hent Membro fra Google Play"
           >
-              <Image
-              src="/badge-google-play.png"
+            <Image
+              src={googlePlayBadge}
               alt="Hent fra Google Play"
-              width={646}
-              height={250}
               className="h-[47px] w-auto"
             />
           </a>
           <a
-            href={LINKS.membroIos}
+            href={LINKS.appStore}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Last ned Membro fra App Store"
           >
-              <Image
-              src="/badge-app-store.svg"
+            <Image
+              src={appStoreBadge}
               alt="Last ned fra App Store"
-              width={120}
-              height={40}
               className="h-[40px] w-auto"
             />
           </a>

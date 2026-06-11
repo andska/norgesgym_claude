@@ -12,14 +12,14 @@ export default function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-10 lg:gap-16 items-center">
             <div>
               <h1
-                className="font-display font-medium text-ink mb-6"
+                className="font-display font-medium text-ink mb-6 text-balance"
                 style={{ fontSize: "clamp(2.75rem, 7vw, 4.5rem)", lineHeight: 1.08 }}
               >
                 Tren når det passer deg.
               </h1>
               <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
                 Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-                bindingstid og stor utstyrspark.
+                bindingstid og én måneds oppsigelse.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
@@ -46,14 +46,14 @@ export default function Hero() {
         ) : (
           <>
             <h1
-              className="font-display font-medium text-ink mb-6 max-w-2xl"
+              className="font-display font-medium text-ink mb-6 max-w-2xl text-balance"
               style={{ fontSize: "clamp(2.75rem, 7vw, 4.5rem)", lineHeight: 1.08 }}
             >
               Tren når det passer deg.
             </h1>
             <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
               Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-              bindingstid og stor utstyrspark.
+              bindingstid og én måneds oppsigelse.
             </p>
             <div className="flex flex-wrap gap-3">
               <a

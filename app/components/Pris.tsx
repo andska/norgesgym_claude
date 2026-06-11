@@ -6,7 +6,7 @@ const specs = [
   { label: "Drop-in", value: "120 kr per besøk" },
   { label: "Årsavgift", value: "Ingen" },
   { label: "Bindingstid", value: "Ingen" },
-  { label: "Oppsigelse", value: "1 måned fra første dag i påfølgende måned" },
+  { label: "Oppsigelse", value: "Én måned, via e-post" },
   { label: "Betaling", value: "Avtalegiro" },
   { label: "Tilgang", value: "Hele døgnet med Membro-appen" },
 ] as const;
@@ -48,7 +48,7 @@ export default function Pris() {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 mb-6">
           <a
             href={LINKS.innmelding}
             target="_blank"
@@ -66,6 +66,24 @@ export default function Pris() {
             Kjøp drop-in
           </a>
         </div>
+
+        <p className="text-[14px] text-stone leading-relaxed">
+          Ring{" "}
+          <a
+            href="tel:+4794789080"
+            className="text-ink font-medium hover:underline"
+          >
+            947 89 080
+          </a>{" "}
+          eller send en e-post til{" "}
+          <a
+            href="mailto:post@norgesgym.no"
+            className="text-ink font-medium hover:underline"
+          >
+            post@norgesgym.no
+          </a>
+          , så hjelper vi deg i gang.
+        </p>
       </div>
     </section>
   );

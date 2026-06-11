@@ -57,8 +57,25 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
+    q: "Hvor ligger Norgesgym?",
+    a: (
+      <>
+        Solgaard Skog 15 i Moss, like ved E6, med gratis parkering rett utenfor inngangen.
+        Se kart og veibeskrivelse under{" "}
+        <a
+          href="#finn-oss"
+          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+        >
+          Finn oss
+        </a>
+        .
+      </>
+    ),
+  },
+  {
     q: "Hvordan sier jeg opp?",
-    a: "Send en e-post til post@norgesgym.no. Oppsigelsestiden er én måned, og du trenger ikke oppgi noen grunn.",
+    // TODO: verify this wording matches the iBooking contract terms exactly before launch.
+    a: "Send en e-post til post@norgesgym.no. Oppsigelsestiden er én måned, regnet fra første dag i påfølgende måned.",
   },
   {
     q: "Når er resepsjonen bemannet?",

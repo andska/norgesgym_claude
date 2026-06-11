@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_PAGES === "true";
+const isPreview = process.env.NEXT_PUBLIC_PREVIEW === "true";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isGithubPages ? "/norgesgym_claude" : "",
-  assetPrefix: isGithubPages ? "/norgesgym_claude/" : "",
+  basePath: isPreview ? "/norgesgym_claude" : "",
+  assetPrefix: isPreview ? "/norgesgym_claude" : "",
   images: {
     unoptimized: true,
   },

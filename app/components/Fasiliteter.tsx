@@ -18,7 +18,8 @@ export default function Fasiliteter() {
           Alt du trenger
         </h2>
         <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-2xl">
-          Norgesgym er rendyrket for egentrening.
+          Norgesgym er rendyrket for egentrening. Ingen timeplaner, ingen bookinger, bare
+          deg og treningen din, i ditt eget tempo.
         </p>
 
         {/* Mobile: horizontal swipe carousel */}
@@ -48,6 +49,11 @@ export default function Fasiliteter() {
             </figure>
           ))}
         </div>
+
+        <p className="text-[14px] text-stone leading-relaxed mt-10 max-w-[60ch]">
+          Stort frivektsutvalg, styrkeapparater, komplett kardioavdeling, Stairmaster
+          Stepmill 5, TreadClimber og TRX.
+        </p>
       </div>
     </section>
   );
