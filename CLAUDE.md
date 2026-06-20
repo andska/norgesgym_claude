@@ -40,7 +40,7 @@ This design system is a locked client decision. Do not redesign, add aesthetic i
 - **NO decorative icons.** Only functional icons: plus/minus in FAQ accordion, arrow in text links. Inline SVG, 1.5px stroke, currentColor.
 - **NO gradients, box-shadows, glassmorphism, background patterns, emoji.**
 - **NO stock photos or AI images.** Use `PlaceholderImage` component.
-- **NO carousels, parallax, scroll-triggered animation.** Only: accordion open/close and hover/focus transitions (150ms).
+- **No autoplay carousels, slider arrows, dots, or rotating-slide indicators.** A static scroll-snap overflow row with no controls is permitted for the photo gallery only. Parallax and scroll-triggered animation remain prohibited. Only: accordion open/close and hover/focus transitions (150ms).
 - **NO Title Case.** Norwegian sentence case everywhere.
 - **Border-radius only** on buttons (10px) and image surfaces (12px). Nothing else gets rounded corners.
 - **Gravel color** must only appear as index numbers, eyebrows and disabled states. Never as body text.

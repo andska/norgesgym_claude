@@ -34,7 +34,7 @@ export default function Header() {
         </a>
 
         {/* Desktop nav */}
-        <nav aria-label="Sidenavigasjon" className="hidden sm:flex items-center gap-7">
+        <nav aria-label="Sidenavigasjon" className="hidden lg:flex items-center gap-7">
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
@@ -52,7 +52,7 @@ export default function Header() {
             href={LINKS.minSide}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline text-[14px] text-stone hover:text-ink transition-colors duration-150"
+            className="hidden lg:inline text-[14px] text-stone hover:text-ink transition-colors duration-150"
           >
             Min side
           </a>
@@ -67,7 +67,7 @@ export default function Header() {
           {/* Hamburger — mobile only */}
           <button
             onClick={() => setOpen((o) => !o)}
-            className="sm:hidden -mr-1 p-1 text-ink"
+            className="lg:hidden -mr-1 p-1 text-ink"
             aria-label={open ? "Lukk meny" : "Åpne meny"}
             aria-expanded={open}
             aria-controls="mobile-nav"
@@ -111,7 +111,7 @@ export default function Header() {
         <nav
           id="mobile-nav"
           aria-label="Mobilnavigasjon"
-          className="sm:hidden border-t border-line bg-white"
+          className="lg:hidden border-t border-line bg-white"
         >
           <div className="max-w-6xl mx-auto px-6 flex flex-col">
             {navLinks.map(({ href, label }) => (
