@@ -53,3 +53,44 @@
     outline-offset: 2px;
   }
 }
+
+/* Lightbox open/close transition (native <dialog>). Quick opacity + subtle
+   scale, in and out, using @starting-style + allow-discrete so all close paths
+   (X, backdrop, Escape) animate. Entirely disabled under reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .lightbox {
+    opacity: 0;
+    transform: scale(0.98);
+    transition:
+      opacity 180ms ease-out,
+      transform 180ms ease-out,
+      overlay 180ms ease-out allow-discrete,
+      display 180ms ease-out allow-discrete;
+  }
+  .lightbox[open] {
+    opacity: 1;
+    transform: scale(1);
+  }
+  @starting-style {
+    .lightbox[open] {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+  }
+
+  .lightbox::backdrop {
+    opacity: 0;
+    transition:
+      opacity 180ms ease-out,
+      overlay 180ms ease-out allow-discrete,
+      display 180ms ease-out allow-discrete;
+  }
+  .lightbox[open]::backdrop {
+    opacity: 1;
+  }
+  @starting-style {
+    .lightbox[open]::backdrop {
+      opacity: 0;
+    }
+  }
+}

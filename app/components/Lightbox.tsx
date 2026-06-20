@@ -6,7 +6,8 @@ export type LightboxImage = { src: StaticImageData; caption: string };
 
 interface Props {
   images: LightboxImage[];
-  startIndex: number;
+  open: boolean;
+  index: number;
   onClose: () => void;
 }
 
@@ -19,25 +20,32 @@ function reducedMotion() {
 
 // Fullscreen image viewer built on the native <dialog> element (platform focus
 // trapping, inert background, Escape-to-close) and CSS scroll-snap for swiping.
+// Always mounted; the `open` prop drives showModal()/close() so the CSS
+// open/close transition (see .lightbox in globals.css) can run on every path.
 // No dependencies, no zoom — enlarged viewing only.
-export default function Lightbox({ images, startIndex, onClose }: Props) {
+export default function Lightbox({ images, open, index, onClose }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const rowRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const indexRef = useRef(startIndex);
+  const indexRef = useRef(index);
 
-  // Open modally, jump to the clicked image instantly, focus the close button.
+  // Drive the modal from the `open` prop. On open: jump to the clicked image
+  // instantly and focus the close button.
   useEffect(() => {
     const dialog = dialogRef.current;
     const row = rowRef.current;
-    if (!dialog || !row) return;
-    if (!dialog.open) dialog.showModal();
-    indexRef.current = startIndex;
-    row.scrollLeft = startIndex * row.clientWidth; // instant, no animation
-    closeRef.current?.focus();
-  }, [startIndex]);
+    if (!dialog) return;
+    if (open) {
+      if (!dialog.open) dialog.showModal();
+      indexRef.current = index;
+      if (row) row.scrollLeft = index * row.clientWidth; // instant, no animation
+      closeRef.current?.focus();
+    } else if (dialog.open) {
+      dialog.close();
+    }
+  }, [open, index]);
 
-  // Route every close path (X, backdrop, Escape) through the native close event.
+  // Sync parent state + restore focus on every close (X, backdrop, Escape).
   useEffect(() => {
     const dialog = dialogRef.current;
     if (!dialog) return;
@@ -78,12 +86,18 @@ export default function Lightbox({ images, startIndex, onClose }: Props) {
 
   const close = () => dialogRef.current?.close();
 
+  // Close only when the click lands on the backdrop layer itself (the slide
+  // element), never on the image, caption, or a control (all descendants).
+  const onBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) close();
+  };
+
   return (
     <dialog
       ref={dialogRef}
       aria-label="Bildevisning"
       onKeyDown={onKeyDown}
-      className="fixed inset-0 max-w-none max-h-none overflow-hidden border-0 p-0 bg-ink/95 backdrop:bg-ink/80"
+      className="lightbox fixed inset-0 m-0 h-full w-full max-h-none max-w-none overflow-hidden border-0 p-0 bg-graphite/95 backdrop:bg-graphite/80"
     >
       <div
         ref={rowRef}
@@ -92,17 +106,15 @@ export default function Lightbox({ images, startIndex, onClose }: Props) {
         style={{ scrollbarWidth: "none" }}
       >
         {images.map((img, i) => (
-          // Slide fills the viewport; clicking the area around the image (backdrop)
-          // closes. The inner wrapper stops that so the image/caption do not.
+          // The slide is the backdrop layer: a click directly on it (the dark
+          // area around the image) closes; clicks on the figure do not bubble a
+          // close because of the target check in onBackdropClick.
           <div
             key={i}
-            onClick={close}
+            onClick={onBackdropClick}
             className="flex h-full w-full flex-shrink-0 snap-center items-center justify-center"
           >
-            <div
-              onClick={(e) => e.stopPropagation()}
-              className="flex flex-col items-center gap-4"
-            >
+            <figure className="flex flex-col items-center gap-4">
               <div className="relative h-[78dvh] w-[92vw]">
                 <Image
                   src={img.src}
@@ -116,7 +128,7 @@ export default function Lightbox({ images, startIndex, onClose }: Props) {
               <figcaption className="px-6 text-center text-[13px] text-white/70">
                 {img.caption}
               </figcaption>
-            </div>
+            </figure>
           </div>
         ))}
       </div>
