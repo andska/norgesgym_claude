@@ -12,8 +12,8 @@ export default function Fasiliteter() {
           Alt du trenger
         </h2>
         <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-2xl">
-          Norgesgym er rendyrket for egentrening. Ingen timeplaner, ingen bookinger, bare
-          deg og treningen din, i ditt eget tempo. På dagtid er det god plass og ro på
+          Norgesgym er et selvbetjent treningssenter i Moss for egentrening. Her finner
+          du alt du trenger til en komplett økt, og på dagtid er det god plass og ro på
           senteret.
         </p>
 

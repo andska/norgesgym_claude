@@ -25,11 +25,11 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Kan jeg trene alene, midt på natten?",
-    a: "Ja. Senteret er videoovervåket og selvbetjent hele døgnet. Du kan alltid ringe 947 89 080 hvis du trenger hjelp.",
+    a: "Ja. Senteret er videoovervåket og selvbetjent hele døgnet.",
   },
   {
     q: "Jeg er helt ny. Passer Norgesgym for meg?",
-    a: "Ja. Du trenger ingen forkunnskaper. Utstyret er enkelt å bruke, og på dagtid er det ofte rolig på senteret. Det er ingen gruppetimer eller faste timeplaner å forholde seg til, så ingen følger med på klokka eller rommet. Ring oss på 947 89 080 hvis du vil vite mer.",
+    a: "Vi har en stor utstyrspark som passer for alle, uansett erfaring. Vi hjelper deg gjerne i gang i resepsjonstiden.",
   },
   {
     q: "Har dere gruppetimer eller personlig trener?",

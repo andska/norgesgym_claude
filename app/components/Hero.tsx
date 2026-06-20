@@ -4,14 +4,11 @@ import PlaceholderImage from "./PlaceholderImage";
 function HeroCopy() {
   return (
     <>
-      {/* Entity sentence — phrased so an answer engine can lift it verbatim. */}
-      <p className="text-[17px] text-stone leading-relaxed mb-4 max-w-xl">
-        Norgesgym er et døgnåpent, selvbetjent treningssenter i Moss for egentrening.
-        429 kr i måneden, ingen bindingstid og én måneds oppsigelse.
-      </p>
-      {/* Positioning line — sets us apart from the cheaper chains without naming them. */}
-      <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-xl">
-        Ro, plass og ditt eget tempo. Ingen mas, ingen timeplaner, ingen bindingstid.
+      {/* One sub line. Numbers (price, binding, 24/7) live in the stat band below,
+          so they are deliberately not repeated here. */}
+      <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
+        Et døgnåpent treningssenter i Moss for deg som vil trene i fred. Ingen
+        timeplaner, ingen mas, bare deg og treningen din, i ditt eget tempo.
       </p>
       <div className="flex flex-wrap gap-3">
         <a

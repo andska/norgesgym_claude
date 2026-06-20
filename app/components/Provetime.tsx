@@ -13,7 +13,7 @@ export default function Provetime() {
           Vil du se senteret først?
         </p>
         <p className="text-[15px] text-stone leading-relaxed max-w-2xl">
-          Kom innom mens resepsjonen er bemannet, mandag til torsdag 16:00 til 18:30,
+          Kom innom mens resepsjonen er bemannet,
           eller ring{" "}
           <a
             href="tel:+4794789080"
@@ -21,17 +21,17 @@ export default function Provetime() {
           >
             947 89 080
           </a>
-          , så avtaler vi en gratis prøvetime. Vil du heller bare trene én gang, kan
-          du{" "}
+          , så avtaler vi en gratis prøvetime. Du kan også
+          {" "}
           <a
             href={LINKS.innmelding}
             target="_blank"
             rel="noopener noreferrer"
             className="text-ink font-medium hover:underline"
           >
-            kjøpe drop-in
+            kjøpe drop-in for ett besøk
           </a>
-          . Norgesgym er et døgnåpent gym i Moss for egentrening.
+          .
         </p>
       </div>
     </section>
