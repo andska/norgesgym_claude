@@ -13,7 +13,8 @@ export default function Fasiliteter() {
         </h2>
         <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-2xl">
           Norgesgym er rendyrket for egentrening. Ingen timeplaner, ingen bookinger, bare
-          deg og treningen din, i ditt eget tempo.
+          deg og treningen din, i ditt eget tempo. På dagtid er det god plass og ro på
+          senteret.
         </p>
 
         <GymGallery />

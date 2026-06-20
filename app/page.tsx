@@ -1,7 +1,9 @@
 import Header from "@/app/components/Header";
 import Hero from "@/app/components/Hero";
 import StatBand from "@/app/components/StatBand";
+import GoogleRating from "@/app/components/GoogleRating";
 import SlikFungererDet from "@/app/components/SlikFungererDet";
+import Provetime from "@/app/components/Provetime";
 import Fasiliteter from "@/app/components/Fasiliteter";
 import Pris from "@/app/components/Pris";
 import Sporsmal from "@/app/components/Sporsmal";
@@ -21,7 +23,9 @@ export default function Page() {
       <main id="main">
         <Hero />
         <StatBand />
+        <GoogleRating />
         <SlikFungererDet />
+        <Provetime />
         <Fasiliteter />
         <Pris />
         <Sporsmal />

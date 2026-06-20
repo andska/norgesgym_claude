@@ -1,6 +1,38 @@
 import { LINKS, FLAGS } from "@/app/config";
 import PlaceholderImage from "./PlaceholderImage";
 
+function HeroCopy() {
+  return (
+    <>
+      {/* Entity sentence — phrased so an answer engine can lift it verbatim. */}
+      <p className="text-[17px] text-stone leading-relaxed mb-4 max-w-xl">
+        Norgesgym er et døgnåpent, selvbetjent treningssenter i Moss for egentrening.
+        429 kr i måneden, ingen bindingstid og én måneds oppsigelse.
+      </p>
+      {/* Positioning line — sets us apart from the cheaper chains without naming them. */}
+      <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-xl">
+        Ro, plass og ditt eget tempo. Ingen mas, ingen timeplaner, ingen bindingstid.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <a
+          href={LINKS.innmelding}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-graphite transition-colors duration-150"
+        >
+          Bli medlem
+        </a>
+        <a
+          href="#provetime"
+          className="border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
+        >
+          Prøv gratis
+        </a>
+      </div>
+    </>
+  );
+}
+
 export default function Hero() {
   return (
     <section
@@ -17,28 +49,7 @@ export default function Hero() {
               >
                 Tren når det passer deg.
               </h1>
-              <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
-                Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-                bindingstid og én måneds oppsigelse.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href={LINKS.innmelding}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-graphite transition-colors duration-150"
-                >
-                  Bli medlem
-                </a>
-                <a
-                  href={LINKS.innmelding}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
-                >
-                  Drop-in
-                </a>
-              </div>
+              <HeroCopy />
             </div>
             {/* TODO photo: hero image of the gym interior, welcoming atmosphere */}
             <PlaceholderImage aspect="4:5" alt="Norgesgym treningssenter" />
@@ -51,28 +62,7 @@ export default function Hero() {
             >
               Tren når det passer deg.
             </h1>
-            <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
-              Døgnåpent treningssenter på Solgaard Skog i Moss. 429 kr i måneden, ingen
-              bindingstid og én måneds oppsigelse.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href={LINKS.innmelding}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-graphite transition-colors duration-150"
-              >
-                Bli medlem
-              </a>
-              <a
-                href={LINKS.innmelding}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
-              >
-                Drop-in
-              </a>
-            </div>
+            <HeroCopy />
           </>
         )}
       </div>

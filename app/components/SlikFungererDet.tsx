@@ -50,7 +50,8 @@ const items = [
   {
     number: "03",
     keyword: "Tren når du vil",
-    description: "Senteret er åpent hele døgnet, alle dager.",
+    description:
+      "Senteret er døgnåpent året rundt. På dagtid er det ofte rolig, og du trener helt i ditt eget tempo.",
   },
 ];
 

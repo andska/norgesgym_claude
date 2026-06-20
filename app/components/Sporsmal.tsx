@@ -16,8 +16,10 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         >
           norgesgymmoss.ibooking.no
         </a>
-        . Det tar et par minutter. Innmelding koster 199 kr, deretter betaler du
-        429 kr i måneden via avtalegiro.
+        . Det tar et par minutter. Innmelding koster 200 kr, deretter betaler du
+        429 kr i måneden via avtalegiro. Du kan også komme innom i bemannet
+        resepsjonstid, mandag til torsdag 16:00–18:30, hvis du vil ha hjelp til å
+        komme i gang.
       </>
     ),
   },
@@ -27,7 +29,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Jeg er helt ny. Passer Norgesgym for meg?",
-    a: "Ja. Du trenger ingen forkunnskaper. Utstyret er enkelt å bruke, og på dagtid er det ofte rolig på senteret. Ring oss på 947 89 080 hvis du vil vite mer.",
+    a: "Ja. Du trenger ingen forkunnskaper. Utstyret er enkelt å bruke, og på dagtid er det ofte rolig på senteret. Det er ingen gruppetimer eller faste timeplaner å forholde seg til, så ingen følger med på klokka eller rommet. Ring oss på 947 89 080 hvis du vil vite mer.",
   },
   {
     q: "Har dere gruppetimer eller personlig trener?",
@@ -71,6 +73,12 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         .
       </>
     ),
+  },
+  {
+    q: "Hva slags utstyr har dere?",
+    // TODO: if owner confirms the machines are Life Fitness, prepend
+    // "Komplett maskinpark fra Life Fitness. " here and in the faqLd copy.
+    a: "Stort frivektsutvalg, styrkeapparater for hele kroppen og en komplett kardioavdeling, i tillegg til Stairmaster Stepmill 5, TreadClimber og TRX.",
   },
   {
     q: "Hvordan sier jeg opp?",

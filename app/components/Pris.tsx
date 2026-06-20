@@ -2,7 +2,7 @@ import { LINKS } from "@/app/config";
 
 const specs = [
   { label: "Månedspris", value: "429 kr" },
-  { label: "Innmelding", value: "199 kr, engangsbeløp" },
+  { label: "Innmelding", value: "200 kr, engangsbeløp" },
   { label: "Drop-in", value: "120 kr per besøk" },
   { label: "Årsavgift", value: "Ingen" },
   { label: "Bindingstid", value: "Ingen" },

@@ -20,9 +20,11 @@ export default function FinnOss() {
               <p>Solgaard Skog 15</p>
               <p>1599 Moss</p>
               <p className="mt-3 text-[14px]">Gratis parkering rett utenfor senteret.</p>
-              {/* TODO copy, verify with owners before launch: one line about
-                  driving context (from E6, from Moss sentrum, or both).
-                  Do not invent travel times, leave the TODO visible in code */}
+              {/* TODO copy: owner to confirm "få minutter fra Moss sentrum" is accurate
+                  before launch. Keep the Solgaard Skog and E6 part regardless. */}
+              <p className="mt-3 text-[14px]">
+                Du finner oss på Solgaard Skog, like ved E6 og få minutter fra Moss sentrum.
+              </p>
               <p className="mt-4">
                 <a
                   href={LINKS.googleMaps}

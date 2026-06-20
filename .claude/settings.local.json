@@ -19,7 +19,9 @@
       "Bash(Remove-Item *)",
       "Bash(python3 -c ' *)",
       "PowerShell(New-Item *)",
-      "PowerShell(npm run *)"
+      "PowerShell(npm run *)",
+      "Bash(pwd -P)",
+      "Read(//c/Users/andre/projects/**)"
     ]
   }
 }
