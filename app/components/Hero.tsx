@@ -4,8 +4,8 @@ import PlaceholderImage from "./PlaceholderImage";
 export default function Hero() {
   return (
     <section
-      className="bg-white"
-      style={{ paddingTop: "clamp(96px, 12vw, 160px)", paddingBottom: "clamp(64px, 8vw, 96px)" }}
+      className="bg-white pb-8 sm:pb-[clamp(64px,8vw,96px)]"
+      style={{ paddingTop: "clamp(96px, 12vw, 160px)" }}
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {FLAGS.heroPhoto ? (

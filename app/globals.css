@@ -19,6 +19,17 @@
   --radius-img: 12px;
 }
 
+@layer utilities {
+  .text-stat-value {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    .text-stat-value {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+  }
+}
+
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
     html {
