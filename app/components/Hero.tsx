@@ -7,7 +7,8 @@ function HeroCopy() {
       {/* One sub line. Numbers (price, binding, 24/7) live in the stat band below,
           so they are deliberately not repeated here. */}
       <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
-        Velkommen til Moss’ råeste treningssenter i nordre bydel. Her finner du en enorm utstyrspark tilpasset både styrke og kondisjon, i lyse lokaler med god plass. Tren akkurat når det passer deg – helt uten stress.
+        Et døgnåpent treningssenter i nordre Moss, med stor utstyrspark og god plass.
+        Selvbetjent egentrening i ditt eget tempo, akkurat når det passer deg.
       </p>
       <div className="flex flex-wrap gap-3">
         <a
