@@ -12,9 +12,7 @@ export default function Fasiliteter() {
           Alt du trenger
         </h2>
         <p className="text-[15px] text-stone leading-relaxed mb-10 max-w-2xl">
-          Norgesgym er et selvbetjent treningssenter i Moss for egentrening. Her finner
-          du alt du trenger til en komplett økt, og på dagtid er det god plass og ro på
-          senteret.
+          Norgesgym er et selvbetjent treningssenter i Moss for egentrening. Her finner du alt du trenger til en komplett økt, med god plass og ro til å trene i ditt eget tempo.
         </p>
 
         <GymGallery />

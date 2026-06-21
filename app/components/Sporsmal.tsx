@@ -37,7 +37,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Hva er drop-in?",
-    a: "Du kan trene én gang uten medlemskap for 120 kr. Full tilgang til alt utstyr, ingen registrering nødvendig.",
+    a: "Du kan trene én gang uten medlemskap for 120 kr. Full tilgang til senteret med Membro appen.",
   },
   {
     q: "Hvordan kommer jeg inn?",
@@ -87,7 +87,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Når er resepsjonen bemannet?",
-    a: "Mandag til torsdag 16:00–18:30. Resten av døgnet er senteret selvbetjent, og du når oss på telefon 947 89 080.",
+    a: "Mandag til torsdag 16:00–18:30. Sommertid og høytider kan påvirke bemanningen i resepsjonen."
   },
 ];
 

@@ -68,7 +68,7 @@ export default function Pris() {
         </div>
 
         <p className="text-[14px] text-stone leading-relaxed">
-          Ring{" "}
+          Har du spørsmål? Ring{" "}
           <a
             href="tel:+4794789080"
             className="text-ink font-medium hover:underline"
