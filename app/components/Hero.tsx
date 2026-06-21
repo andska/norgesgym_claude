@@ -7,8 +7,7 @@ function HeroCopy() {
       {/* One sub line. Numbers (price, binding, 24/7) live in the stat band below,
           so they are deliberately not repeated here. */}
       <p className="text-[17px] text-stone leading-relaxed mb-10 max-w-xl">
-        Et døgnåpent treningssenter i Moss for deg som vil trene i fred. Ingen
-        timeplaner, ingen mas, bare deg og treningen din, i ditt eget tempo.
+        Velkommen til Moss’ råeste treningssenter i nordre bydel. Her finner du en enorm utstyrspark tilpasset både styrke og kondisjon, i lyse lokaler med god plass. Tren akkurat når det passer deg – helt uten stress.
       </p>
       <div className="flex flex-wrap gap-3">
         <a
@@ -44,7 +43,7 @@ export default function Hero() {
                 className="font-display font-medium text-ink mb-6 text-balance"
                 style={{ fontSize: "clamp(2.75rem, 7vw, 4.5rem)", lineHeight: 1.08 }}
               >
-                Tren når det passer deg.
+                God plass. Eget tempo.
               </h1>
               <HeroCopy />
             </div>
@@ -57,7 +56,7 @@ export default function Hero() {
               className="font-display font-medium text-ink mb-6 max-w-2xl text-balance"
               style={{ fontSize: "clamp(2.75rem, 7vw, 4.5rem)", lineHeight: 1.08 }}
             >
-              Tren når det passer deg.
+              God plass. Eget tempo.
             </h1>
             <HeroCopy />
           </>

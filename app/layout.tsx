@@ -110,7 +110,7 @@ const faqLd = {
       name: "Kan jeg trene alene, midt på natten?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja. Senteret er videoovervåket og selvbetjent hele døgnet. Du kan alltid ringe 947 89 080 hvis du trenger hjelp.",
+        text: "Ja. Senteret er videoovervåket og selvbetjent hele døgnet.",
       },
     },
     {
@@ -118,7 +118,7 @@ const faqLd = {
       name: "Jeg er helt ny. Passer Norgesgym for meg?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja. Du trenger ingen forkunnskaper. Utstyret er enkelt å bruke, og på dagtid er det ofte rolig på senteret. Det er ingen gruppetimer eller faste timeplaner å forholde seg til, så ingen følger med på klokka eller rommet. Ring oss på 947 89 080 hvis du vil vite mer.",
+        text: "Vi har en stor utstyrspark som passer for alle, uansett erfaring. Vi hjelper deg gjerne i gang i resepsjonstiden.",
       },
     },
     {

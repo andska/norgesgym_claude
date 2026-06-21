@@ -21,7 +21,9 @@
       "PowerShell(New-Item *)",
       "PowerShell(npm run *)",
       "Bash(pwd -P)",
-      "Read(//c/Users/andre/projects/**)"
+      "Read(//c/Users/andre/projects/**)",
+      "Bash(npm audit *)",
+      "WebFetch(domain:norgesgymmoss.ibooking.no)"
     ]
   }
 }
