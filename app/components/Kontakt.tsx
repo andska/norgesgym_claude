@@ -39,10 +39,7 @@ export default function Kontakt() {
                   post@norgesgym.no
                 </a>
               </p>
-              <p className="mt-3">
-                Resepsjon: mandag–torsdag 16:00–18:30.
-              </p>
-              <p>Senteret er åpent hele døgnet for medlemmer.</p>
+              <p className="mt-3">Senteret er åpent hele døgnet for medlemmer.</p>
             </address>
           </div>
 

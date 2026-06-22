@@ -1,4 +1,5 @@
 import { LINKS } from "@/app/config";
+import SummerReceptionNote from "./SummerReceptionNote";
 
 export default function FinnOss() {
   return (
@@ -64,6 +65,7 @@ export default function FinnOss() {
                 </a>
                 .
               </p>
+              <SummerReceptionNote />
             </div>
           </div>
 

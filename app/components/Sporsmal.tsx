@@ -89,6 +89,10 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     q: "Når er resepsjonen bemannet?",
     a: "Mandag til torsdag 16:00–18:30. Sommertid og høytider kan påvirke bemanningen i resepsjonen."
   },
+  {
+    q: "Har dere sommerstengt?",
+    a: "Nei. Senteret er åpent for medlemmer hele døgnet, hele sommeren, med Membro-appen. I perioden 23. juni til 9. august er bemannet resepsjon redusert til mandager 17:00 til 19:00, men selve treningssenteret er tilgjengelig som vanlig.",
+  },
 ];
 
 export default function Sporsmal() {

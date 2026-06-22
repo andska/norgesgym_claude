@@ -185,6 +185,14 @@ const faqLd = {
         text: "Mandag til torsdag 16:00–18:30. Resten av døgnet er senteret selvbetjent, og du når oss på telefon 947 89 080.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Har dere sommerstengt?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nei. Senteret er åpent for medlemmer hele døgnet, hele sommeren, med Membro-appen. I perioden 23. juni til 9. august er bemannet resepsjon redusert til mandager 17:00 til 19:00, men selve treningssenteret er tilgjengelig som vanlig.",
+      },
+    },
   ],
 };
 

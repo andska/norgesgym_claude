@@ -20,7 +20,9 @@ function HeroCopy() {
           Bli medlem
         </a>
         <a
-          href="#provetime"
+          href={LINKS.innmelding}
+          target="_blank"
+          rel="noopener noreferrer"
           className="border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
         >
           Prøv gratis
