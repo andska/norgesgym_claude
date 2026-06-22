@@ -26,7 +26,7 @@ export const SUMMER_HOURS = {
   from: "06-22",
   to: "08-09",
   label: "Sommertid 23. juni–9. august",
-  text: "Bemannet resepsjon kun mandager 17:00–19:00. Medlemmer kommer inn som vanlig med Membro-appen, hele døgnet, hele sommeren.",
+  text: "Bemannet resepsjon kun mandager 17:00–19:00. Medlemmer kommer inn som vanlig med Membro-appen.",
 };
 
 // True when `date` falls within the SUMMER_HOURS window (inclusive). Compares
