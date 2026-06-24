@@ -12,7 +12,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
           href={LINKS.innmelding}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+          className="text-ink font-medium underline underline-offset-2 decoration-signal hover:text-signal transition-colors duration-150"
         >
           norgesgymmoss.ibooking.no
         </a>
@@ -50,7 +50,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         Ja, gratis parkering rett utenfor. Se{" "}
         <a
           href="#finn-oss"
-          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+          className="text-ink font-medium underline underline-offset-2 decoration-signal hover:text-signal transition-colors duration-150"
         >
           kart og veibeskrivelse
         </a>{" "}
@@ -66,7 +66,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         Se kart og veibeskrivelse under{" "}
         <a
           href="#finn-oss"
-          className="text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+          className="text-ink font-medium underline underline-offset-2 decoration-signal hover:text-signal transition-colors duration-150"
         >
           Finn oss
         </a>
@@ -104,7 +104,7 @@ export default function Sporsmal() {
   return (
     <section id="sporsmal" className="bg-smoke py-16 lg:py-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <p className="text-[12px] tracking-[0.08em] text-gravel mb-8">Spørsmål</p>
+        <p className="text-[12px] tracking-[0.08em] text-signal mb-8">Spørsmål</p>
         <h2
           className="font-display font-medium text-ink mb-10"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
@@ -124,7 +124,7 @@ export default function Sporsmal() {
                   className="w-full flex items-center justify-between gap-4 py-4 text-left font-display font-medium text-[16px] text-ink"
                 >
                   <span>{faq.q}</span>
-                  <span className="flex-shrink-0 text-stone" aria-hidden="true">
+                  <span className="flex-shrink-0 text-signal" aria-hidden="true">
                     {isOpen ? (
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
                         <line x1="3" y1="10" x2="17" y2="10" />

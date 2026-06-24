@@ -59,7 +59,7 @@ export default function SlikFungererDet() {
   return (
     <section id="slik-fungerer-det" className="bg-white py-16 lg:py-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <p className="text-[12px] tracking-[0.08em] text-gravel mb-8">
+        <p className="text-[12px] tracking-[0.08em] text-signal mb-8">
           Slik fungerer det
         </p>
         <h2

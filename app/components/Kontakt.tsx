@@ -1,4 +1,5 @@
 import { LINKS } from "@/app/config";
+import logoDark from "@/public/norgesgym-logo-dark.svg";
 
 export default function Kontakt() {
   return (
@@ -8,12 +9,11 @@ export default function Kontakt() {
           {/* Contact */}
           <div>
             <p className="leading-none mb-5">
-              <span
-                className="block font-display font-semibold uppercase tracking-[0.06em] text-white text-[15px]"
-                style={{ fontStretch: "125%" }}
-              >
-                NORGESGYM
-              </span>
+              <img
+                src={logoDark.src}
+                alt="Norgesgym"
+                className="block h-[22px] w-auto max-w-[60vw]"
+              />
               <span
                 className="block font-display text-[10px] tracking-[0.14em] text-[#A6A39C] uppercase mt-0.5"
                 style={{ fontStretch: "125%" }}

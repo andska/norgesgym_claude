@@ -8,7 +8,7 @@ export default function Provetime() {
   return (
     <section id="provetime" className="bg-white border-t border-b border-line">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
-        <p className="text-[12px] tracking-[0.08em] text-gravel mb-4">Gratis prøvetime</p>
+        <p className="text-[12px] tracking-[0.08em] text-signal mb-4">Gratis prøvetime</p>
         <p className="font-display font-medium text-ink text-[20px] mb-3">
           Vil du se senteret først?
         </p>
@@ -17,7 +17,7 @@ export default function Provetime() {
           eller ring{" "}
           <a
             href="tel:+4794789080"
-            className="text-ink font-medium hover:underline"
+            className="text-ink font-medium hover:text-signal hover:underline"
           >
             947 89 080
           </a>
@@ -27,7 +27,7 @@ export default function Provetime() {
             href={LINKS.innmelding}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-ink font-medium hover:underline"
+            className="text-ink font-medium hover:text-signal hover:underline"
           >
             kjøpe drop-in for ett besøk
           </a>

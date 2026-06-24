@@ -15,7 +15,7 @@ export default function StatBand() {
               className={`bg-white py-6 sm:py-8 px-3 sm:px-5 lg:px-8 ${i === 0 ? "pl-0" : ""} ${i === 2 ? "pr-0" : ""}`}
             >
               <div
-                className="text-stat-value font-display font-medium text-ink leading-tight"
+                className="text-stat-value font-display font-medium text-marine leading-tight"
                 style={{ fontStretch: "125%" }}
               >
                 {stat.number}

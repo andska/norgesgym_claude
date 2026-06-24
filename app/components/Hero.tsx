@@ -15,7 +15,7 @@ function HeroCopy() {
           href={LINKS.innmelding}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-graphite transition-colors duration-150"
+          className="bg-marine text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-marine-dark transition-colors duration-150"
         >
           Bli medlem
         </a>
@@ -23,7 +23,7 @@ function HeroCopy() {
           href={LINKS.innmelding}
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
+          className="border border-marine text-marine text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-marine hover:text-white transition-colors duration-150"
         >
           Prøv gratis
         </a>

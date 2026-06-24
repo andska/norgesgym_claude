@@ -5,7 +5,7 @@ export default function FinnOss() {
   return (
     <section id="finn-oss" className="bg-white py-16 lg:py-24 border-t border-line">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <p className="text-[12px] tracking-[0.08em] text-gravel mb-8">Finn oss</p>
+        <p className="text-[12px] tracking-[0.08em] text-signal mb-8">Finn oss</p>
         <h2
           className="font-display font-medium text-ink mb-10"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
@@ -31,7 +31,7 @@ export default function FinnOss() {
                   href={LINKS.googleMaps}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-[14px] text-ink font-medium underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+                  className="inline-flex items-center gap-1.5 text-[14px] text-ink font-medium underline underline-offset-2 decoration-signal hover:text-signal transition-colors duration-150"
                 >
                   Åpne i Google Maps
                   <svg
@@ -56,11 +56,11 @@ export default function FinnOss() {
               <p className="text-[15px] text-stone">Mandag–torsdag 16:00–18:30</p>
               <p className="text-[14px] text-stone mt-1">
                 Utenom disse tidene er senteret selvbetjent. Du når oss på{" "}
-                <a href="tel:+4794789080" className="text-ink font-medium hover:underline">
+                <a href="tel:+4794789080" className="text-ink font-medium hover:text-signal hover:underline">
                   947 89 080
                 </a>{" "}
                 eller{" "}
-                <a href="mailto:post@norgesgym.no" className="text-ink font-medium hover:underline">
+                <a href="mailto:post@norgesgym.no" className="text-ink font-medium hover:text-signal hover:underline">
                   post@norgesgym.no
                 </a>
                 .

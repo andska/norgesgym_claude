@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { LINKS } from "@/app/config";
+import logo from "@/public/norgesgym-logo.svg";
 
 const navLinks = [
   { href: "#slik-fungerer-det", label: "Slik fungerer det" },
@@ -19,12 +20,11 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Wordmark */}
         <a href="#" onClick={close} className="leading-none">
-          <span
-            className="block font-display font-semibold uppercase tracking-[0.06em] text-ink text-[15px]"
-            style={{ fontStretch: "125%" }}
-          >
-            NORGESGYM
-          </span>
+          <img
+            src={logo.src}
+            alt="Norgesgym"
+            className="block h-[18px] sm:h-[24px] w-auto max-w-[60vw]"
+          />
           <span
             className="block font-display text-[10px] tracking-[0.14em] text-gravel uppercase mt-0.5"
             style={{ fontStretch: "125%" }}
@@ -60,7 +60,7 @@ export default function Header() {
             href={LINKS.innmelding}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-ink text-white text-[14px] font-medium rounded-btn px-5 py-2.5 hover:bg-graphite transition-colors duration-150"
+            className="header-cta-narrow-hide bg-marine text-white text-[14px] font-medium rounded-btn px-5 py-2.5 whitespace-nowrap hover:bg-marine-dark transition-colors duration-150"
           >
             Bli medlem
           </a>
@@ -139,7 +139,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={close}
-                className="block w-full text-center bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3.5 hover:bg-graphite transition-colors duration-150"
+                className="block w-full text-center bg-marine text-white text-[14px] font-medium rounded-btn px-6 py-3.5 hover:bg-marine-dark transition-colors duration-150"
               >
                 Bli medlem
               </a>

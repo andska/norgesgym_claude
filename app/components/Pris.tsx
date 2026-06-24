@@ -15,7 +15,7 @@ export default function Pris() {
   return (
     <section id="pris" className="bg-white py-16 lg:py-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <p className="text-[12px] tracking-[0.08em] text-gravel mb-8">Pris</p>
+        <p className="text-[12px] tracking-[0.08em] text-signal mb-8">Pris</p>
         <h2
           className="font-display font-medium text-ink mb-10"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
@@ -36,7 +36,7 @@ export default function Pris() {
                     href={LINKS.avtalegiro}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-graphite transition-colors duration-150"
+                    className="underline underline-offset-2 decoration-signal hover:text-signal transition-colors duration-150"
                   >
                     {row.value}
                   </a>
@@ -53,7 +53,7 @@ export default function Pris() {
             href={LINKS.innmelding}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-ink text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-graphite transition-colors duration-150"
+            className="inline-block bg-marine text-white text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-marine-dark transition-colors duration-150"
           >
             Bli medlem
           </a>
@@ -61,7 +61,7 @@ export default function Pris() {
             href={LINKS.innmelding}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-ink text-ink text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-smoke transition-colors duration-150"
+            className="inline-block border border-marine text-marine text-[14px] font-medium rounded-btn px-6 py-3 hover:bg-marine hover:text-white transition-colors duration-150"
           >
             Kjøp drop-in
           </a>
@@ -71,14 +71,14 @@ export default function Pris() {
           Har du spørsmål? Ring{" "}
           <a
             href="tel:+4794789080"
-            className="text-ink font-medium hover:underline"
+            className="text-ink font-medium hover:text-signal hover:underline"
           >
             947 89 080
           </a>{" "}
           eller send en e-post til{" "}
           <a
             href="mailto:post@norgesgym.no"
-            className="text-ink font-medium hover:underline"
+            className="text-ink font-medium hover:text-signal hover:underline"
           >
             post@norgesgym.no
           </a>

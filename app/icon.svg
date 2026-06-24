@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="3.84" fill="#131210"/>
-  <path d="M8 8h3v16H8zm3 0h3l6 16h-3zm9 0h3v16h-3z" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 222 167" role="img" aria-label="Norgesgym">
+<g transform="translate(0,143) scale(0.1,-0.1)" fill="#02336F" stroke="#FFFFFF" stroke-width="80" stroke-linejoin="round" paint-order="stroke"><path d="M52 1382 l-13 -9 150 -155 151 -156 0 -348 0 -348 -137 -138 c-76
+-76 -143 -149 -151 -163 l-13 -25 420 0 c231 0 422 3 424 7 3 5 -62 77 -144
+162 l-149 154 0 223 c0 123 4 225 9 228 7 5 300 -385 536 -712 l45 -62 224 0
+223 0 6 257 c4 141 7 371 7 510 l0 255 147 154 c82 85 149 158 151 164 l4 10
+-431 0 -430 0 6 -17 c4 -10 67 -84 140 -165 l133 -147 0 -190 c0 -110 -4 -192
+-10 -196 -5 -3 -33 27 -63 67 -200 273 -262 354 -274 361 -7 5 -11 11 -9 15 2
+4 -39 66 -93 137 l-97 130 -374 2 c-206 2 -381 -1 -388 -5z"/></g>
 </svg>

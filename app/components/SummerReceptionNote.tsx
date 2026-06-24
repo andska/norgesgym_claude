@@ -19,7 +19,7 @@ export default function SummerReceptionNote() {
 
   return (
     <div className="mt-4 border-l border-line pl-4">
-      <p className="text-[12px] tracking-[0.08em] text-gravel mb-1">
+      <p className="text-[12px] tracking-[0.08em] text-signal mb-1">
         {SUMMER_HOURS.label}
       </p>
       <p className="text-[14px] text-stone leading-[1.6]">{SUMMER_HOURS.text}</p>

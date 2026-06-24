@@ -12,6 +12,10 @@
   --color-ok: #2F6B3F;
   --color-error: #A8442E;
 
+  --color-marine: #02336F;
+  --color-marine-dark: #102A63;
+  --color-signal: #CC0214;
+
   --font-display: var(--font-archivo);
   --font-sans: var(--font-inter);
 
@@ -27,6 +31,14 @@
     .text-stat-value {
       font-size: clamp(2rem, 5vw, 3rem);
     }
+  }
+}
+
+/* Header CTA collides with the logo only on very narrow screens. Hide it under
+   364px (max-width 363px); the hero has its own Bli medlem / Prøv gratis. */
+@media (max-width: 363px) {
+  .header-cta-narrow-hide {
+    display: none;
   }
 }
 
